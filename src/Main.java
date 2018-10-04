@@ -1,3 +1,6 @@
+
+import java.io.*;
+
 /**
  * @author Nail Zinnurov
  * cobratms@gmail.com
@@ -5,4 +8,13 @@
  */
 
 public class Main {
+    public static void main(String[] args) {
+        CopyFileWithNewCharset firstEx = new CopyFileWithNewCharset();
+        firstEx.CopyAndChangeCharset();
+
+        DeleteNumberPhone secEx = new DeleteNumberPhone();
+        secEx.delete();
+    }
 }
+
+
