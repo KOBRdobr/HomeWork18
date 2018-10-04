@@ -17,14 +17,17 @@ public class DeleteNumberPhone {
             while ((symbol = file.read()) != -1) {
                 builder.append((char) symbol);
             }
-            String fileText = builder.toString();
+            char[] fileText = builder.toString().toCharArray();
+
+            StringBuilder numbers = new StringBuilder();
 
 
-
-            for(int i = 0; i < fileText.length(); i++) {
-                if(isDigit(fileText.substring(i, i))) {
-
+            for(int i = 0; i < fileText.length; i++) {
+                for (int j = 0; j < 12; i++) {
+                    numbers.append(fileText[j]);
                 }
+
+                System.out.println();
             }
 
 
